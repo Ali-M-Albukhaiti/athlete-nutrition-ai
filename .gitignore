@@ -1,0 +1,25 @@
+## ✅ Use this:
+
+```gitignore id="g1"
+# Python backend
+__pycache__/
+*.pyc
+venv/
+.env
+
+# ML models (important!)
+ml/*.pkl
+ml/*.joblib
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Node modules (React)
+node_modules/
+
+# Build output
+build/
+dist/
+
+# System files
+.DS_Store
