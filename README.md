@@ -162,3 +162,5 @@ To build an intelligent system that helps athletes estimate their daily calorie 
 
 ---
 
+Run backend:  py -m uvicorn main:app --reload
+Run frontend: npm run dev
