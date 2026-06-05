@@ -5,7 +5,10 @@ import ResultCard from "../components/ResultCard";
 
 const Home = () => {
   const [calories, setCalories] =
-    useState<number | null>(null);
+  useState<number | null>(null);
+
+  const [goal, setGoal] =
+  useState<string>("");
 
   return (
     <>
@@ -30,13 +33,14 @@ const Home = () => {
           </div>
 
           <AthleteForm
-            onResult={(result) =>
-              setCalories(result.calories)
-            }
-          />
+                onResult={(result) => {
+                setCalories(result.predicted_calories);
+                setGoal(result.goal);
+            }}
+           />
 
           {calories && (
-            <ResultCard calories={calories} />
+            <ResultCard calories={calories} goal={goal} />
           )}
         </div>
       </div>

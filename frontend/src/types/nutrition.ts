@@ -8,9 +8,9 @@ export type IntensityType = "low" | "medium" | "high";
 
 export type GoalType =
   | "fat_loss"
-  | "maintain"
+  | "maintenance"
   | "muscle_gain"
-  | "endurance";
+  | "endurance_performance";
 
 /** Saved once on this device (height, age, previous days). */
 export interface AthleteProfile {
@@ -34,7 +34,8 @@ export interface SessionInputs {
 export type NutritionRequest = AthleteProfile & SessionInputs;
 
 export interface NutritionResponse {
-  calories: number;
+  predicted_calories: number;
+  goal: string;
 }
 
 export const SPORT_OPTIONS: { value: SportType; label: string }[] = [
@@ -55,7 +56,10 @@ export const INTENSITY_OPTIONS: {
 
 export const GOAL_OPTIONS: { value: GoalType; label: string }[] = [
   { value: "fat_loss", label: "Fat Loss" },
-  { value: "maintain", label: "Maintain" },
+  { value: "maintenance", label: "Maintenance" },
   { value: "muscle_gain", label: "Muscle Gain" },
-  { value: "endurance", label: "Endurance" },
+  {
+    value: "endurance_performance",
+    label: "endurance_performance",
+  },
 ];
