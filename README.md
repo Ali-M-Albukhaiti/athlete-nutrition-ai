@@ -1,4 +1,4 @@
-# 🏃‍♂️ Athlete Nutrition AI System
+# 🏃‍♂️ MY AI Nutrition System
 
 ## 📌 Project Overview
 
