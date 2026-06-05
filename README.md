@@ -154,7 +154,7 @@ To build an intelligent system that helps athletes estimate their daily calorie 
 
 ## 🚀 Future Improvements
 
-* Add macro nutrient prediction (protein, carbs, fats)
+* Add macro nutrient prediction (protein, carbs, fats)  - (done)
 * Deploy backend + frontend (cloud)
 * Add real athlete dataset
 * Improve model with time-series tracking
