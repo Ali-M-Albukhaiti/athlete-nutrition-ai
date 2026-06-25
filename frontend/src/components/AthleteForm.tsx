@@ -220,7 +220,7 @@ const AthleteForm = ({ onResult }: Props) => {
         {/* Previous Day 2 */}
         <div>
           <label className="text-sm text-slate-200">
-            Previous Day 2 — Intensity
+            Two days ago — Intensity
           </label>
 
           <select
@@ -242,7 +242,7 @@ const AthleteForm = ({ onResult }: Props) => {
         {/* Previous Day 2 Duration */}
         <div>
           <label className="text-sm text-slate-200">
-            Previous Day 2 — Duration (min)
+            Two days ago — Duration (min)
           </label>
 
           <input
@@ -257,7 +257,7 @@ const AthleteForm = ({ onResult }: Props) => {
         {/* Previous Day 1 */}
         <div>
           <label className="text-sm text-slate-200">
-            Previous Day 1 — Intensity
+            Yesterday — Intensity
           </label>
 
           <select
@@ -279,7 +279,7 @@ const AthleteForm = ({ onResult }: Props) => {
         {/* Previous Day 1 Duration */}
         <div>
           <label className="text-sm text-slate-200">
-            Previous Day 1 — Duration (min)
+            Yesterday — Duration (min)
           </label>
 
           <input
